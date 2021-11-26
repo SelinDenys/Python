@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+{% load static %}
+<head>
+    <title>Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Include Styles -->
+    <!DOCTYPE html>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link type="text/css" href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <h1><a href="/"> Персональний блог</a></h1>
+    </div>
+    {% block content %}
+    {% endblock %}
+</div>
+<!-- Javascripts Section -->
+<script src="{% static 'js/jquery.js' %}"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/bootstrap.min.js' %}" crossorigin="anonymous"></script>
+
+<footer class="page-footer">
+    <div class="container">
+        <p>Всі матеріали взяті з сайту <a href="https://pythonguide.rozh2sch.org.ua">Путівник мовою
+            програмування Python</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
